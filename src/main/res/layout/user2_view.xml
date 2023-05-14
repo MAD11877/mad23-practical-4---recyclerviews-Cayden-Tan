@@ -31,16 +31,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="2dp"
+        android:id="@+id/Linearlayout1"
         android:layout_below="@+id/ListimageView"
         android:layout_marginTop="10dp"
+        android:orientation="horizontal"
         android:background="#D8CFCF"/>
-    <FrameLayout
+
+    <ImageView
         android:id="@+id/UserFrame"
-        android:layout_width="384dp"
-        android:layout_height="552dp" />
-
-
-
+        android:layout_width="360dp"
+        android:layout_height="367dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Linearlayout1"/>
 
 
 </RelativeLayout>

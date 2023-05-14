@@ -64,6 +64,15 @@ public class ListActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        adapter.setOnItemClickListener2(new MyViewHolder2.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                // Handle the click event and navigate to the target page
+                Intent intent = new Intent(ListActivity.this, MainActivity.class);
+                intent.putExtra("username", data.get(position).getName());
+                startActivity(intent);
+            }
+        });
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
